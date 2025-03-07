@@ -84,15 +84,15 @@ void ListaDoble::eliminarFinal()
 
 bool ListaDoble::buscar(int valor)
 {
-    auto* actual = inicio;
-        while (actual) {
-            if (actual->valor == valor) {
-                return true;
-            }
-            actual = actual->siguiente;
+    auto *actual = inicio;
+    while (actual)
+    {
+        if (actual->valor == valor)
+        {
+            return true;
         }
-        return false;
-    
+        actual = actual->siguiente;
+    }
     return false;
 }
 
